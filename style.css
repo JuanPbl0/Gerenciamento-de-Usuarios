@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(45deg, #6D8D43, #ABE75F);
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.texto-diagonal {
+    position: fixed;
+    top: 600px;
+    left: 1450px;
+    transform: translate(-50%, -50%) rotate(-40deg);
+    font-size: 400px;
+    color: rgba(0, 0, 0, 0.39);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.texto-logo {
+    position: fixed;
+    top: 20px;
+    left: 55px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.486);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.navbar {
+    position: relative;
+    top: 35px;    
+    width: 100%;
+    background-color: #6D8D43;
+    border-bottom: 1px solid #74c905;
+    z-index: 1000;
+}
+
+.table{     
+    display: inline-table;
+    flex-direction: column;    
+    justify-content: left;
+    align-items: center;
+    margin-top: 90px;   
+    font-size: 15px;
+    z-index: 1000;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+#buttonNovoCadastro {
+    position: relative;  
+    top: 60px;  
+    background-color: #6D8D43;
+    height: 40px;
+    width: 150px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#buttonNovoCadastro:hover {
+    background-color: #74c905;      
+}
+
+#buttonSair {
+    background-color: #6D8D43;
+    height: 40px;
+    width: 80px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#buttonSair:hover {
+    background-color: #74c905;      
+}

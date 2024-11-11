@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe</title>
+    <link rel="stylesheet" href="styleDetalhes.css">
+</head>
+<body>
+    <div class="texto-diagonal">XPTO</div>
+
+    <button id="voltar" onclick="voltarParaPaginaPrincipal()">Voltar</button>
+    
+    <section id="dadosUsuario">
+        <header id="detalheHeader">
+            <span style="   font-size: 25px;                
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                ">
+                <strong>Editar Usuário</strong></span>
+        </header>
+
+        <form action="" method="post">
+            <label for="id">ID:</label>
+            <input class="input" type="number" name="id" id="idcodigo" disabled>
+
+            <label for="nome">Nome:</label>
+            <input class="input" type="text" name="nome" id="nome">
+
+            <label for="cpf">CPF:</label>
+            <input class="input" type="text" name="cpf" id="cpf" maxlength="14" disabled>
+
+            <label for="email">E-mail:</label>
+            <input class="input" type="email" name="email" id="email">
+
+            <label for="contato">Telefone:</label>
+            <input class="input" type="text" name="contato" id="contato" maxlength="15">
+            
+            <label for="categoria">Categoria:</label>
+            <select class="input" name="categoria" id="categoria">
+                <option value="colaborador">Colaborador</option>
+                <option value="administrador">Administrador</option>
+            </select>
+
+            <label for="endereco">Endereço:</label>
+            <input class="input" type="text" name="endereco" id="endereco">
+
+            <label for="bairro">Bairro:</label>
+            <input class="input" type="text" name="bairro" id="bairro">
+
+            <label for="cidade">Cidade:</label>
+            <input class="input" type="text" name="cidade" id="cidade">
+
+            <label for="pais">País:</label>
+            <input class="input" type="text" name="pais" id="pais">
+
+            <label for="uf">UF:</label>
+            <input class="input" type="text" name="uf" id="uf">
+            
+            <label for="genero">Gênero:</label>
+            <select class="input" name="genero" id="genero" disabled>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+
+            <label for="dataNasc">Data de Nascimento:</label>
+            <input class="input" type="date" name="dataNasc" id="dataNasc" disabled>
+
+            <label for="senha">Senha:</label>
+            <input class="input" type="password" name="senha" id="senha" placeholder="********" disabled>
+
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+                <label for="confirmarSenha">Confirmar senha:</label>
+                <input class="input" type="password" name="confirmarSenha" id="confirmarSenha" placeholder="********" disabled>
+            </div>
+
+            <div style="padding: 5px;">
+                <strong>A senha deve atender aos seguintes requisitos:</strong><br> 
+                <ul style="list-style-type: square; margin-left: 20px; padding: 5px; font-style: italic;">
+                    <li>Ter pelo menos 8 caracteres</li>
+                    <li>Incluir pelo menos 1 letra maiúscula</li>
+                    <li>Incluir pelo menos 1 letra minúscula</li>
+                    <li>Incluir pelo menos 1 número</li>
+                    <li>Incluir pelo menos 1 caractere especial</li>
+                </ul>
+            </div>
+
+            <button class="button" type="button" onclick="editarDados()">Salvar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>    
+</body>
+</html>
